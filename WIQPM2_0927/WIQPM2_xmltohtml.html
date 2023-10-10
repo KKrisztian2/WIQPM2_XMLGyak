@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Órarend</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Típus</th>
+            <th>Tárgy</th>
+            <th>Kezdet</th>
+            <th>Vég</th>
+            <th>Nap</th>
+            <th>Helyszín</th>
+            <th>Oktató</th>
+            <th>Szak</th>
+        </tr>
+
+        <xsl:for-each select="WIQPM2_orarend/ora">
+            <tr>
+                <td><xsl:value-of select="@id"/></td>
+                <td><xsl:value-of select="@típus"/></td>
+                <td><xsl:value-of select="tárgy"/></td>
+                <td><xsl:value-of select="idopont/kezdet"/></td>
+                <td><xsl:value-of select="idopont/veg"/></td>
+                <td><xsl:value-of select="idopont/nap"/></td>
+                <td><xsl:value-of select="helyszín"/></td>
+                <td><xsl:value-of select="oktato"/></td>
+                <td><xsl:value-of select="szak"/></td>
+            </tr>
+        </xsl:for-each>
+    </table>
+</body>
+</html>

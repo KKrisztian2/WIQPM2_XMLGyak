@@ -1,0 +1,28 @@
+<konferencia>
+    <cim>MultiScience - XXXVI. microCAD Nemzetközi Multidiszciplináris Tudományos Konferencia</cim>
+    <helyszin>Miskolci Egyetem</helyszin>
+    <datum>2023. október 12-13.</datum>
+    <eloado>
+        <nev>Konf Erencia</nev>
+        <adoszam>43256438-3-05</adoszam>
+        <lakcim>Miskolc</lakcim>
+    </eloado>
+    <hallgatok>
+        <hallgato>
+            <nev>Nagy Ernő</nev>
+            <lakcim>Gesztely</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Kiss Péter</nev>
+            <lakcim>Miskolc</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Tóth Benedek</nev>
+            <lakcim>Mályi</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Kocsis Anna</nev>
+            <lakcim>Répáshuta</lakcim>
+        </hallgato>
+    </hallgatok>
+</konferencia>

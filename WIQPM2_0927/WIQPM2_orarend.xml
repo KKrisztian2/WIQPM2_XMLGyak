@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WIQPM2_orarend>
+	<ora id="1" típus="Előadás">
+		<tárgy>Adatkezelés XML-ben</tárgy>
+		<idopont>
+			<kezdet>12:00</kezdet>
+			<veg>14:00</veg>
+			<nap>Kedd</nap>
+		</idopont>
+		<helyszín>XXXII. A1 magasfsz</helyszín>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="2" típus="Gyakorlat">
+		<tárgy>Adatkezelés XML-ben</tárgy>
+		<idopont>
+			<kezdet>12:00</kezdet>
+			<veg>14:00</veg>
+			<nap>Szerda</nap>
+		</idopont>
+		<helyszín>In/103 In I. em. 103</helyszín>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="3" típus="Előadás">
+		<tárgy>Vállalati információs rendszerek fejlesztése</tárgy>
+		<idopont>
+			<kezdet>14:00</kezdet>
+			<veg>16:00</veg>
+			<nap>Szerda</nap>
+		</idopont>
+		<helyszín>In/101 In I. e. 101</helyszín>
+		<oktato>Dr. Sasvári Péter</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="4" típus="Gyakorlat">
+		<tárgy>Vállalati információs rendszerek fejlesztése</tárgy>
+		<idopont>
+			<kezdet>18:00</kezdet>
+			<veg>20:00</veg>
+			<nap>Szerda</nap>
+		</idopont>
+		<helyszín>In/101 In I. e. 103</helyszín>
+		<oktato>Dr. Sasvári Péter</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="5" típus="CV">
+		<tárgy>Gazdasági és pénzügyi modellek</tárgy>
+		<idopont>
+			<kezdet></kezdet>
+			<veg></veg>
+			<nap></nap>
+		</idopont>
+		<helyszín></helyszín>
+		<oktato>Dr. Fegyverneki Sándor</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="6" típus="Gyakorlat">
+		<tárgy>Idegen nyelv felmentett 1.</tárgy>
+		<idopont>
+			<kezdet></kezdet>
+			<veg></veg>
+			<nap></nap>
+		</idopont>
+		<helyszín></helyszín>
+		<oktato></oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="7" típus="Gyakorlat">
+		<tárgy>Szakdolgozatkészítés I.</tárgy>
+		<idopont>
+			<kezdet></kezdet>
+			<veg></veg>
+			<nap></nap>
+		</idopont>
+		<helyszín></helyszín>
+		<oktato>Dr. Fegyverneki Sándor</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+	<ora id="8" típus="Gyakorlat">
+		<tárgy>Szakmai gyakorlat</tárgy>
+		<idopont>
+			<kezdet></kezdet>
+			<veg></veg>
+			<nap></nap>
+		</idopont>
+		<helyszín></helyszín>
+		<oktato>Dr. Körei Attila</oktato>
+		<szak>Programtervező informatikus</szak>
+	</ora>
+</WIQPM2_orarend>
