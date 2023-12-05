@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Egyszerű típusok -->
+<xs:element name="tipus" type="xs:string" />
+<xs:element name="sz_orszag" type="xs:string" />
+<xs:element name="tulajdonos" type="xs:string" />
+
+<xs:element name="miota_szp" type="xs:string" />
+
+<xs:element name="j_nev" type="xs:string" />
+<xs:element name="j_nemzetiseg" type="xs:string" />
+<xs:element name="aktiv" type="aktivTipus" />
+<xs:element name="j_rang" type="xs:string" />
+<xs:element name="pozicio" type="pozicioTipus" />
+<xs:element name="karrier_kezdete" type="xs:gYear" />
+<xs:element name="eletkor" type="xs:integer" />
+
+<xs:element name="cs_nemzetiseg" type="xs:string" />
+<xs:element name="cs_rang" type="xs:integer" />
+<xs:element name="regio" type="xs:string" />
+
+<xs:element name="e_nev" type="xs:string" />
+<xs:element name="miota" type="xs:gYear" />
+<xs:element name="korabbi_csapat" type="xs:string" />
+
+<xs:element name="es_nev" type="xs:string" />
+<xs:element name="ev" type="xs:gYear" />
+<xs:element name="nyeremeny" type="xs:integer" />
+<xs:element name="es_orszag" type="xs:string" />
+<xs:element name="varos" type="xs:string" />
+<xs:element name="hely" type="xs:string" />
+
+
+ <!-- Saját típusok létrehozása  -->
+<xs:simpleType name="aktivTipus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Igen" />
+        <xs:enumeration value="Nem" />      
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="pozicioTipus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Top" />
+        <xs:enumeration value="Mid" />
+        <xs:enumeration value="Bottom" />
+        <xs:enumeration value="Support" />
+        <xs:enumeration value="Jungle" />
+    </xs:restriction>
+</xs:simpleType>
+
+
+<!-- Komplex típushoz sajat típus létrehozása-->
+<xs:complexType name="szponzorTipus">
+    <xs:sequence>
+        <xs:element ref="tipus" />           
+        <xs:element ref="sz_orszag" />
+        <xs:element name="tulajdonos" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="sz_nev" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="szp_csapatTipus">
+    <xs:sequence>
+        <xs:element ref="miota_szp" />
+    </xs:sequence>
+    <xs:attribute name="szp_csapat_azonosito" type="xs:integer" use="required" />
+    <xs:attribute name="szp_nev" type="xs:string" use="required" />
+    <xs:attribute name="csapat_nev" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="jatekosTipus">
+    <xs:sequence>
+        <xs:element ref="j_nev" />           
+        <xs:element ref="j_nemzetiseg" />
+        <xs:element ref="aktiv" />           
+        <xs:element ref="j_rang" />
+        <xs:element ref="pozicio" />           
+        <xs:element ref="karrier_kezdete" />
+        <xs:element ref="eletkor" />
+    </xs:sequence>
+    <xs:attribute name="j_azonosito" type="xs:integer" use="required" />
+    <xs:attribute name="csapat_nev" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="csapatTipus">
+    <xs:sequence>
+        <xs:element ref="cs_nemzetiseg" />           
+        <xs:element ref="cs_rang" />
+        <xs:element ref="regio" />
+    </xs:sequence>
+    <xs:attribute name="cs_nev" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="edzoTipus">
+    <xs:sequence>
+        <xs:element ref="e_nev" />           
+        <xs:element ref="miota" />
+        <xs:element ref="korabbi_csapat" />
+    </xs:sequence>
+    <xs:attribute name="e_azonosito" type="xs:integer" use="required" />
+    <xs:attribute name="csapat_nev" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="esemenyTipus">
+    <xs:sequence>
+        <xs:element ref="es_nev" />           
+        <xs:element ref="ev" />
+        <xs:element ref="nyeremeny" />
+        <xs:element name = "helyszin">
+            <xs:complexType mixed = "true">
+                <xs:sequence>
+                    <xs:element name="es_orszag" type="xs:string" />
+                    <xs:element name="varos" type="xs:string" />
+                    <xs:element name="hely" type="xs:string" />
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+    <xs:attribute name="es_azonosito" type="xs:integer" use="required" />
+    <xs:attribute name="csapat_nev" type="xs:string" use="required" />
+</xs:complexType>
+
+
+<!-- Az elemek sorrendisége a gyökérelemtől -->
+<xs:element name="LoL_WIQPM2">
+    <xs:complexType>
+        <xs:sequence>
+
+            <xs:element name="szponzorok">
+                <xs:complexType mixed = "true">
+                    <xs:sequence>
+                        <xs:element name="szponzor" type="szponzorTipus" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="szp_csapatok">
+                <xs:complexType mixed = "true">
+                    <xs:sequence>
+                        <xs:element name="szp_csapat" type="szp_csapatTipus" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="jatekosok">
+                <xs:complexType mixed = "true">
+                    <xs:sequence>
+                        <xs:element name="jatekos" type="jatekosTipus" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="csapatok">
+                <xs:complexType mixed = "true">
+                    <xs:sequence>
+                        <xs:element name="csapat" type="csapatTipus" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="edzok">
+                <xs:complexType mixed = "true">
+                    <xs:sequence>
+                        <xs:element name="edzo" type="edzoTipus" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="esemenyek">
+                <xs:complexType mixed = "true">
+                    <xs:sequence>
+                        <xs:element name="esemeny" type="esemenyTipus" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- Elsődleges kulcsok létrehozása-->
+    <xs:key name="szponzor_kulcs">
+        <xs:selector xpath="szponzor"/>
+        <xs:field xpath="@sz_nev"/>
+    </xs:key>
+    <xs:key name="szp_csapat_kulcs">
+        <xs:selector xpath="szp_csapat"/>
+        <xs:field xpath="@szp_csapat_azonosito"/>
+    </xs:key>
+    <xs:key name="jatekos_kulcs">
+        <xs:selector xpath="jatekos"/>
+        <xs:field xpath="@j_azonosito"/>
+    </xs:key>
+    <xs:key name="csapat_kulcs">
+        <xs:selector xpath="csapat"/>
+        <xs:field xpath="@cs_nev"/>
+    </xs:key>
+    <xs:key name="edzo_kulcs">
+        <xs:selector xpath="edzo"/>
+        <xs:field xpath="@e_azonosito"/>
+    </xs:key>
+    <xs:key name="esemeny_kulcs">
+        <xs:selector xpath="esemeny"/>
+        <xs:field xpath="@es_azonosito"/>
+    </xs:key>
+
+
+    <!-- Idegen kulcsok létrehozása -->
+    <xs:keyref name="szp_csapat_szp_ikulcs" refer="szponzor_kulcs">
+        <xs:selector xpath="szp_csapat"/>
+        <xs:field xpath="@szponzor"/>
+    </xs:keyref>
+    <xs:keyref name="szp_csapat_csapat_ikulcs" refer="csapat_kulcs">
+        <xs:selector xpath="szp_csapat"/>
+        <xs:field xpath="@csapat"/>
+    </xs:keyref>
+    <xs:keyref name="jatekos_csapat_ikulcs" refer="csapat_kulcs">
+        <xs:selector xpath="jatekos"/>
+        <xs:field xpath="@csapat"/>
+    </xs:keyref>
+    <xs:keyref name="edzo_csapat_ikulcs" refer="csapat_kulcs">
+        <xs:selector xpath="edzo"/>
+        <xs:field xpath="@csapat"/>
+    </xs:keyref>
+    <xs:keyref name="esemeny_csapat_ikulcs" refer="esemeny_kulcs">
+        <xs:selector xpath="esemeny"/>
+        <xs:field xpath="@csapat"/>
+    </xs:keyref>
+
+
+    <!-- 1:1 kapcsolat -->
+    <xs:unique name="csapat_edzo_egyedi">
+        <xs:selector xpath="edzo"/>
+        <xs:field xpath="@csapat"/>
+    </xs:unique>
+
+</xs:element>
+
+
+</xs:schema>
