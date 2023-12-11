@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><kurzusfelvetel xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" egyetem="ME" tanev="23/24 I." xs:noNamespaceSchemaLocation="WIQPM2_kurzusfelvetel.xsd">
+    <hallgato id="WIQPM2">
+        <hnev>Kovács Krisztián</hnev>
+        <szulev>2001.04.12.</szulev>
+        <szak evf="4">Programtervező informatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL332-B" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>A1 XXXII. Ea. magasfsz.</hely>
+            <idopont>E. Kedd 12:00-14:00, Gy. Szerda 12:00-14:00</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+            <oraado>Dr. Bednarik László</oraado>
+        </kurzus>
+        <kurzus id="GEIA335L-B" jovahagyas="igen">
+            <kurzusnev>Vállalati információs rendszerek fejlesztése</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf/103</hely>
+            <idopont>E. Szerda 14:00-16:00, Gy. Szerda 18:00-20:00</idopont>
+            <oktato>Dr. Sasvári Péter László</oktato>
+            <oraado>Dr. Sasvári Péter László</oraado>
+        </kurzus>
+        <kurzus id="GEMAK266-B" nyelv="magyar">
+            <kurzusnev>Gazdasági és pénzügyi modellek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>CV</hely>
+            <idopont>CV</idopont>
+            <oktato>Dr. Fegyverneki Sándor</oktato>
+            <oraado>Dr. Fegyverneki Sándor</oraado>
+        </kurzus>
+        <kurzus id="MIGEBIDFM1" nyelv="német">
+            <kurzusnev>Idegen nyelv felmentett 1.</kurzusnev>
+            <kredit>0</kredit>
+            <hely>-</hely>
+            <idopont>-</idopont>
+            <oktato>-</oktato>
+        <oraado>Nagy Péter</oraado></kurzus>
+        <kurzus id="GEIALSzDBP1-B" jovahagyas="igen">
+            <kurzusnev>Szakdolgozatkészítés I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>-</hely>
+            <idopont>-</idopont>
+            <oktato>Smid László Tamás</oktato>
+        <oraado>Okuwawe Vendaru</oraado></kurzus>
+    </kurzusok>
+
+</kurzusfelvetel>

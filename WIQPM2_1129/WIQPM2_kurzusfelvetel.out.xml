@@ -1,0 +1,74 @@
+<html>
+    <body>
+       <h2>Órarend</h2>
+       <table>
+          <tr>
+             <th>ID</th>
+             <th>Jovahagyas</th>
+             <th>Nyelv</th>
+             <th>Kurzusnev</th>
+             <th>Kredit</th>
+             <th>Hely</th>
+             <th>Idopont</th>
+             <th>Oktato</th>
+             <th>Oraado</th>
+          </tr>
+          <tr>
+             <td>GEIAL332-B</td>
+             <td>igen</td>
+             <td>magyar</td>
+             <td>Adatkezelés XML-ben</td>
+             <td>5</td>
+             <td>A1 XXXII. Ea. magasfsz.</td>
+             <td>E. Kedd 12:00-14:00, Gy. Szerda 12:00-14:00</td>
+             <td>Dr. Bednarik László</td>
+             <td>Dr. Bednarik László</td>
+          </tr>
+          <tr>
+            <td>GEIA335L-B</td>
+            <td>igen</td>
+            <td></td>
+            <td>Vállalati információs rendszerek fejlesztése</td>
+            <td>5</td>
+            <td>Inf/103</td>
+            <td>E. Szerda 14:00-16:00, Gy. Szerda 18:00-20:00</td>
+            <td>Dr. Sasvári Péter László</td>
+            <td>Dr. Sasvári Péter László</td>
+          </tr>
+          <tr>
+            <td>GEMAK266-B</td>
+            <td></td>
+            <td>magyar</td>
+            <td>Gazdasági és pénzügyi modellek</td>
+            <td>5</td>
+            <td>CV</td>
+            <td>E. Kedd 12:00-14:00, Gy. Szerda 12:00-14:00</td>
+            <td>Dr. Fegyverneki Sándor</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MIGEBIDFM1</td>
+            <td></td>
+            <td>angol</td>
+            <td>Idegen nyelv felmentett 1.</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>GEIALSzDBP1-B</td>
+             <td>igen</td>
+             <td></td>
+             <td>Szakdolgozatkészítés I.</td>
+             <td>5</td>
+             <td></td>
+             <td></td>
+             <td>Smid László Tamás</td>
+             <td></td>
+          </tr>
+       </table>
+    </body>
+ </html>
+ 

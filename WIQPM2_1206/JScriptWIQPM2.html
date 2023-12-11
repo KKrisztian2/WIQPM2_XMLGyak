@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurzusfelvetel</title>
+</head>
+
+<body>
+    <div id="kimenet"></div>
+
+    <script>
+        var jsonContent = `{
+            "kurzusfelvetel": {
+                "tanev": "23/24 I.",
+                "egyetem": "ME",
+                "hallgato": {
+                    "id": "WIQPM2",
+                    "hnev": "Kovács Krisztián",
+                    "szulev": "2001.04.12.",
+                    "szak": {
+                        "evf": "4",
+                        "szak": "Programtervező informatikus"
+                    }
+                },
+                "kurzusok": {
+                    "kurzus": [
+                        {
+                            "id": "GEIAL332-B",
+                            "jovahagyas": "igen",
+                            "nyelv": "magyar",
+                            "kurzusnev": "Adatkezelés XML-ben",
+                            "kredit": "5",
+                            "hely": "A1 XXXII. Ea. magasfsz.",
+                            "idopont": "E. Kedd 12:00-14:00, Gy. Szerda 12:00-14:00",
+                            "oktato": "Dr. Bednarik László",
+                            "oraado": "Dr. Bednarik László"
+                        },
+                        {
+                            "id": "GEIA335L-B",
+                            "jovahagyas": "igen",
+                            "kurzusnev": "Vállalati információs rendszerek fejlesztése",
+                            "kredit": "5",
+                            "hely": "Inf/103",
+                            "idopont": "E. Szerda 14:00-16:00, Gy. Szerda 18:00-20:00",
+                            "oktato": "Dr. Sasvári Péter László",
+                            "oraado": "Dr. Sasvári Péter László"
+                        },
+                        {
+                            "id": "GEMAK266-B",
+                            "nyelv": "magyar",
+                            "kurzusnev": "Gazdasági és pénzügyi modellek",
+                            "kredit": "5",
+                            "hely": "CV",
+                            "idopont": "CV",
+                            "oktato": "Dr. Fegyverneki Sándor"
+                        },
+                        {
+                            "id": "MIGEBIDFM1",
+                            "nyelv": "angol",
+                            "kurzusnev": "Idegen nyelv felmentett 1.",
+                            "kredit": "0",
+                            "hely": "-",
+                            "idopont": "-",
+                            "oktato": "-",
+                            "oraado": "-"
+                        },
+                        {
+                            "id": "GEIALSzDBP1-B",
+                            "jovahagyas": "igen",
+                            "kurzusnev": ">Szakdolgozatkészítés I.",
+                            "kredit": "5",
+                            "hely": "-",
+                            "idopont": "-",
+                            "oktato": "Smid László Tamás",
+                            "oraado": "Smid László Tamás"
+                        }
+                    ]
+                }
+            }
+        }`;
+
+        var jsonObject = JSON.parse(jsonContent);
+
+        displayJsonObject("", jsonObject, document.getElementById("kimenet"));
+
+        function displayJsonObject(prefix, jsonObject, targetElement) {
+            for (var key in jsonObject) {
+                if (jsonObject.hasOwnProperty(key)) {
+                    var keyStr = key;
+                    var value = jsonObject[key];
+
+                    if (typeof value === 'object') {
+                        displayJsonObject(prefix + keyStr + ": ", value, targetElement);
+                    } else {
+                        targetElement.innerHTML += keyStr + ": " + value + "<br>";
+                    }
+                }
+            }
+            targetElement.innerHTML += "<br>";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+hallgato: 
+        Kovács Krisztián
+        2001.04.12.
+        Programtervezõ informatikus
+    
+  hnev: Kovács Krisztián
+  szulev: 2001.04.12.
+  szak: Programtervezõ informatikus

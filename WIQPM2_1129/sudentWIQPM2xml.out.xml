@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <body>
+    <h2>Hallgatók</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Vezeteknév</th>
+        <th>Keresztnév</th>
+        <th>Becenév</th>
+        <th>Kor</th>
+        <th>Ösztöndíj</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Makó</td>
+        <td>Pál</td>
+        <td>Pali</td>
+        <td>21</td>
+        <td>43000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Nagy</td>
+        <td>János</td>
+        <td>Jancsi</td>
+        <td>19</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rezes</td>
+        <td>Leonidász</td>
+        <td>Leo</td>
+        <td>20</td>
+        <td>21000</td>
+      </tr>
+    </table>
+  </body>
+</html>
