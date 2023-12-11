@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><LoL_WIQPM2 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaWIQPM2.xsd">
+
+    <!-- Szponzorok -->
+    <szponzorok>
+        <szponzor sz_nev="Hana Bank">
+            <tipus>Bank</tipus>
+            <sz_orszag>Dél-Korea</sz_orszag>
+            <tulajdonos>Park Sung-ho</tulajdonos>
+        </szponzor>
+        <szponzor sz_nev="Twitch">
+            <tipus>Streamingszolgáltatás</tipus>
+            <sz_orszag>USA</sz_orszag>
+            <tulajdonos>Twitch Interactive</tulajdonos>
+        </szponzor>
+        <szponzor sz_nev="BMW">
+            <tipus>Járműipar</tipus>
+            <sz_orszag>Németország</sz_orszag>
+            <tulajdonos>Stefan Quandt</tulajdonos>
+            <tulajdonos>Susanne Klatten</tulajdonos>
+            <tulajdonos>BlackRock</tulajdonos>
+        </szponzor>
+    </szponzorok>
+
+    <!-- Szp csapat-->
+    <szp_csapatok>
+        <szp_csapat csapat_nev="G2" szp_csapat_azonosito="1" szp_nev="BMW">
+            <miota_szp>2018</miota_szp>
+        </szp_csapat>
+        <szp_csapat csapat_nev="G2" szp_csapat_azonosito="2" szp_nev="Twitch">
+            <miota_szp>2020</miota_szp>
+        </szp_csapat>
+        <szp_csapat csapat_nev="T1" szp_csapat_azonosito="3" szp_nev="Hana Bank">
+            <miota_szp>2022</miota_szp>
+        </szp_csapat>
+    </szp_csapatok>
+
+    <!-- Játékosok -->
+    <jatekosok>
+        <jatekos csapat_nev="G2" j_azonosito="1">
+            <j_nev>BrokenBlade</j_nev>
+            <j_nemzetiseg>német</j_nemzetiseg>
+            <aktiv>Igen</aktiv>
+            <j_rang>77</j_rang>
+            <pozicio>Top</pozicio>
+            <karrier_kezdete>2016</karrier_kezdete>
+            <eletkor>23</eletkor>
+        </jatekos>
+        <jatekos csapat_nev="G2" j_azonosito="2">
+            <j_nev>Yike</j_nev>
+            <j_nemzetiseg>svéd</j_nemzetiseg>
+            <aktiv>Igen</aktiv>
+            <j_rang>203</j_rang>
+            <pozicio>Jungle</pozicio>
+            <karrier_kezdete>2019</karrier_kezdete>
+            <eletkor>23</eletkor>
+        </jatekos>
+        <jatekos csapat_nev="G2" j_azonosito="3">
+            <j_nev>Caps</j_nev>
+            <j_nemzetiseg>norvég</j_nemzetiseg>
+            <aktiv>Igen</aktiv>
+            <j_rang>21</j_rang>
+            <pozicio>Mid</pozicio>
+            <karrier_kezdete>2015</karrier_kezdete>
+            <eletkor>24</eletkor>
+        </jatekos>
+        <jatekos csapat_nev="G2" j_azonosito="4">
+            <j_nev>Hans Sama</j_nev>
+            <j_nemzetiseg>francia</j_nemzetiseg>
+            <aktiv>Igen</aktiv>
+            <j_rang>83</j_rang>
+            <pozicio>Bottom</pozicio>
+            <karrier_kezdete>2014</karrier_kezdete>
+            <eletkor>24</eletkor>
+        </jatekos>
+        <jatekos csapat_nev="G2" j_azonosito="5">
+            <j_nev>Mikyx</j_nev>
+            <j_nemzetiseg>szlovén</j_nemzetiseg>
+            <aktiv>Igen</aktiv>
+            <j_rang>31</j_rang>
+            <pozicio>Support</pozicio>
+            <karrier_kezdete>2014</karrier_kezdete>
+            <eletkor>25</eletkor>
+        </jatekos>
+        <jatekos csapat_nev="T1" j_azonosito="6">
+            <j_nev>Faker</j_nev>
+            <j_nemzetiseg>dél koreai</j_nemzetiseg>
+            <aktiv>Igen</aktiv>
+            <j_rang>2</j_rang>
+            <pozicio>Mid</pozicio>
+            <karrier_kezdete>2013</karrier_kezdete>
+            <eletkor>27</eletkor>
+        </jatekos>
+    </jatekosok>
+
+    <!-- Csapatok -->
+    <csapatok>
+        <csapat cs_nev="T1">
+            <cs_nemzetiseg>Dél-Korea</cs_nemzetiseg>
+            <cs_rang>1</cs_rang>
+            <regio>LCK</regio>
+        </csapat>
+        <csapat cs_nev="G2">
+            <cs_nemzetiseg>Németország</cs_nemzetiseg>
+            <cs_rang>6</cs_rang>
+            <regio>LEC</regio>
+        </csapat>
+        <csapat cs_nev="Mad Lions">
+            <cs_nemzetiseg>Spanyolország</cs_nemzetiseg>
+            <cs_rang>16</cs_rang>
+            <regio>LEC</regio>
+        </csapat>
+        <csapat cs_nev="JD Gaming">
+            <cs_nemzetiseg>Kína</cs_nemzetiseg>
+            <cs_rang>4</cs_rang>
+            <regio>LPL</regio>
+        </csapat>
+    </csapatok>
+
+    <!-- Edzők -->
+    <edzok>
+        <edzo csapat_nev="G2" e_azonosito="1">
+            <e_nev>Dylan Falco</e_nev>
+            <miota>2021</miota>
+            <korabbi_csapat>Schalke 04</korabbi_csapat>
+        </edzo>
+        <edzo csapat_nev="T1" e_azonosito="2">
+            <e_nev>kK0ma</e_nev>
+            <miota>2023</miota>
+            <korabbi_csapat>DWG Kia</korabbi_csapat>
+        </edzo>
+        <edzo csapat_nev="Mad Lions" e_azonosito="3">
+            <e_nev>Mac</e_nev>
+            <miota>2019</miota>
+            <korabbi_csapat>Splyce</korabbi_csapat>
+        </edzo>
+        <edzo csapat_nev="JD Gaming" e_azonosito="4">
+            <e_nev>Mafa</e_nev>
+            <miota>2023</miota>
+            <korabbi_csapat>Gen.G</korabbi_csapat>
+        </edzo>
+    </edzok>
+
+    <!-- Események -->
+    <esemenyek>
+        <esemeny csapat_nev="G2" es_azonosito="1">
+            <es_nev>LEC 2023 Season Finals</es_nev>
+            <ev>2023</ev>
+            <nyeremeny>65000</nyeremeny>
+            <helyszin>
+                <es_orszag>Franciaország</es_orszag>
+                <varos>Montpellier</varos>
+                <hely>Sud de France Arena</hely>
+            </helyszin>
+        </esemeny>
+        <esemeny csapat_nev="JD Gaming" es_azonosito="2">
+            <es_nev>MSI 2023</es_nev>
+            <ev>2023</ev>
+            <nyeremeny>50000</nyeremeny>
+            <helyszin>
+                <es_orszag>Anglia</es_orszag>
+                <varos>London</varos>
+                <hely>Queen Elizabeth Olympic Park</hely>
+            </helyszin>
+        </esemeny>
+        <esemeny csapat_nev="T1" es_azonosito="3">
+            <es_nev>Worlds 2023</es_nev>
+            <ev>2023</ev>
+            <nyeremeny>445000</nyeremeny>
+            <helyszin>
+                <es_orszag>Dél-Korea</es_orszag>
+                <varos>Seul</varos>
+                <hely>Gocheok Sky Dome</hely>
+            </helyszin>
+        </esemeny>
+    </esemenyek>
+
+</LoL_WIQPM2>
