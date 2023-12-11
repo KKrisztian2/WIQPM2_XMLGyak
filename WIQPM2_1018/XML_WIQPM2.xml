@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fesztivalok>
+        <fesztival id="fesztival0">
+            <nev>Fesz1</nev>
+            <helyszin>Helys1</helyszin>
+            <ev>2022</ev>
+        </fesztival>
+        <tulajdonos id="tulajdonos0" feszID= "fesztival0">
+            <nev>Nagy Bence</nev>
+            <adoszam>54354643</adoszam>
+            <alapitas>2010</alapitas>
+            <bevetel>23534267</bevetel>
+        </tulajdonos>
+        <bar id="bar0" feszID= "fesztival0">
+            <nev>Bar1</nev>
+            <ceg>Pepsi</ceg>
+            <ital>kóla</ital>
+            <ital>sör</ital>
+        </bar>
+        <alkalmazott id="alkalmazott0" barID="bar0">
+            <nev>Sáros Tibor</nev>
+            <muszak>hétfő 20-04</muszak>
+            <muszak>kedd 20-04</muszak>
+            <muszak>szerda 20-04</muszak>
+            <fizetes>424234</fizetes>
+        </alkalmazott>
+        <resztvevo id="resztvevo0" feszID= "fesztival0" >
+            <nev>Kiss János</nev>
+            <diakigazolvany>3243256623DS</diakigazolvany>
+            <lakcim>
+                <telepules>Miskolc</telepules>
+                <utca>Vágány</utca>
+                <hazszam>32</hazszam>
+            </lakcim>
+        </resztvevo>
+        <nyelvtudas id="nyelvtudas0" resztID="resztvevo0">
+            <nyelv>német</nyelv>
+            <szint>A1</szint>
+        </nyelvtudas>
+        <fellepo id="fellepo0" feszID="fesztival0">
+            <nev>DNC</nev>
+            <orszag>Németország</orszag>
+            <dij>54325123</dij>
+        </fellepo>
+        <kozvelemeny id="kozvelemeny0" resztID="resztvevo0" nyelvID="nyelvtudas0">
+            <kerdezo>DNC</kerdezo>
+        </fellepo>
+
+    
+</fesztivalok>

@@ -31,6 +31,7 @@
             <hely>CV</hely>
             <idopont>CV</idopont>
             <oktato>Dr. Fegyverneki Sándor</oktato>
+            <oraado>Dr. Fegyverneki Sándor</oraado>
         </kurzus>
         <kurzus id="MIGEBIDFM1" nyelv="angol">
             <kurzusnev>Idegen nyelv felmentett 1.</kurzusnev>
@@ -38,6 +39,7 @@
             <hely>-</hely>
             <idopont>-</idopont>
             <oktato>-</oktato>
+            <oraado>-</oraado>
         </kurzus>
         <kurzus id="GEIALSzDBP1-B" jovahagyas="igen">
             <kurzusnev>Szakdolgozatkészítés I.</kurzusnev>
@@ -45,6 +47,7 @@
             <hely>-</hely>
             <idopont>-</idopont>
             <oktato>Smid László Tamás</oktato>
+            <oraado>Smid László Tamás</oraado>
         </kurzus>
     </kurzusok>
 
