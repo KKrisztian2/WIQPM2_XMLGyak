@@ -50,33 +50,55 @@ public class DomWriteWIQPM2 {
 
 	private static void printNode(Node node, int depth) 
 	{
-	    String indent = " ".repeat(depth * 5);
-	    if (node.getNodeType() == Node.ELEMENT_NODE) 
-	    {
+		String indent = " ".repeat(depth * 5);
+		Integer s = 0;
+		if (node.getNodeType() == Node.ELEMENT_NODE) 
+		{
 			Element element = (Element) node;
 			NamedNodeMap attributes = element.getAttributes();
 			if(attributes.getLength() == 0){
-				System.out.println(indent + "<" + node.getNodeName() + ">");
+				if(node.getChildNodes().getLength() > 1){
+					System.out.println(indent + "<" + node.getNodeName() + ">");
+					s = 1;
+				}
+				else{
+					System.out.print(indent + "<" + node.getNodeName() + ">");
+				}
 			}
 			else{
+				if(node.getChildNodes().getLength() > 1){
+					s = 1;
+				}
 				System.out.print(indent + "<" + node.getNodeName() + " ");
 				for (int i = 0; i < attributes.getLength(); i++) {
 					Node attribute = attributes.item(i);
 					System.out.print(attribute + " ");
 				}
-				System.out.println(">");
+				if(node.getChildNodes().getLength() > 1){
+					System.out.println(">");
+				}
+				else{
+					System.out.print(">");
+				}
 			}
-	        NodeList nodeL = node.getChildNodes();
-	        for (int i = 0; i < nodeL.getLength(); i++) 
-	        {
-	            printNode(nodeL.item(i), depth + 1);
-	        }
-	        System.out.println(indent + "</" + node.getNodeName() + ">");
-	    } 
-	    else if (node.getNodeType() == Node.TEXT_NODE && !node.getTextContent().trim().isEmpty()) 
-	    {
-	        System.out.println(indent + node.getTextContent().trim());
-	    }
+			NodeList nodeL = node.getChildNodes();
+			for (int i = 0; i < nodeL.getLength(); i++) 
+			{
+				printNode(nodeL.item(i), depth + 1);
+			}
+			if(s == 1){
+				System.out.print(indent + "</" + node.getNodeName() + ">");
+				System.out.println();
+			}
+			else{
+				System.out.print(" </" + node.getNodeName() + ">");
+				System.out.println();
+			}
+		} 
+		else if (node.getNodeType() == Node.TEXT_NODE && !node.getTextContent().trim().isEmpty()) 
+		{
+			System.out.print(" " +node.getTextContent().trim());
+		}
 	}
 
 	private static void fill(Document doc) {
